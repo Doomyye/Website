@@ -1,0 +1,208 @@
+@font-face {
+    font-family: Porsche;
+    src: url(PorscheNext-SemiBold.otf);
+}
+
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    animation: fadeInAnimation ease-in 0.7s;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+#head{
+    max-width: 3000px;
+    margin: auto;
+}
+
+#head ul{
+    text-align: right;
+    margin: 0;
+    padding: 30px 0;
+    padding-left: 70px;
+}
+
+#head ul li{
+    float: none;
+    display: inline-block;
+}
+
+#head ul li:nth-child(1),
+#head ul li:nth-child(2)
+{
+    float: left;
+}
+
+#head ul li a{
+    margin: 0 90px;
+    font-family: porsche;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out 1ms ;
+}
+
+#head ul li a:hover{
+    color: rgb(119, 119, 119);
+}
+
+#logocontainer{
+    width: 180px;
+    height: 100px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logocontainer #logo{
+    width: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+#logo:hover{
+    transform: rotateX(30deg);
+}
+
+#banner{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quote{
+    margin-top: 80px;
+    margin-bottom: 300px;
+    color: white;
+    font-size: 30px;
+    font-family: Porsche;
+    word-spacing: 10px;
+}
+
+#rootbanner {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 1500px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#contentBR{
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    color: rgb(187, 155, 14);
+    margin-left: 30px;
+    font-size: 80px;
+    font-family: porsche;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    margin-bottom: 80px;
+    font-size: 80px;
+    letter-spacing: 8px;
+    font-family: porsche;
+}
+
+
+#root {
+    float: left;
+    position: relative;
+    margin: auto;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#root2 {
+    float: right;
+    position: relative;
+    margin: auto;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#image img{
+    float: left;
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+#image:hover img{
+    transform: scale(1.05);
+}
+
+#content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: porsche;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#content, #contentBR {display: none;}
+#image:hover #content, #image:hover #contentBR {
+    display: block;
+    animation: fadeInAnimation ease-in 1.4s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+       
+    }
+    30% {
+        opacity: 1;
+        
+     }
+}
+
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    font-family: porsche;
+}
