@@ -83,11 +83,22 @@ body::-webkit-scrollbar{
     transform: rotateX(30deg);
 }
 
+#ban{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-height: 600px;
+}
+
 #banner{
-    width: 100%;
+    max-width: 2000px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+#banner:hover{
+    transform: scale(1.03);
 }
 
 #quote{
@@ -109,7 +120,7 @@ body::-webkit-scrollbar{
     margin-bottom: 30px;
 }
 
-#contentBR{
+#contentBR p{
     position: absolute;
     top: 10px;
     left: 20%;
@@ -128,7 +139,6 @@ h1{
     letter-spacing: 8px;
     font-family: porsche;
 }
-
 
 #root {
     float: left;
@@ -205,4 +215,49 @@ h1{
     color: white;
     font-size: 20px;
     font-family: porsche;
+}
+
+footer{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    align-items: center;
+    justify-content: center;
+}
+
+#thing{
+    font-family: Porsche;
+    list-style: none;
+    color: rgb(168, 168, 168);
+    font-size: 40px;
+    text-underline-offset: 20px;
+    letter-spacing: 1px;
+}
+
+#footlist{  
+    width: 500px;
+    display: flex;
+    float: left;
+    margin-left: 100px;
+}
+
+#footlist ul{
+    text-align: left;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    line-height: 50px;
+}
+
+#footlist ul li a{
+    font-family: Porsche;
+    color: rgb(87, 87, 87);
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#footlist ul li a:hover{
+    color: rgb(173, 173, 173);
 }
